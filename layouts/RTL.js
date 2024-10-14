@@ -15,8 +15,6 @@ import routes from "routes.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/layouts/rtlStyle.js";
 
-import bgImage from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
 
 let ps;
 
@@ -29,12 +27,10 @@ export default function RTL({ children, ...rest }) {
   // ref to help us initialize PerfectScrollbar on windows devices
   const mainPanel = React.createRef();
   // states and functions
-  const [image, setImage] = React.useState(bgImage);
   const [color, setColor] = React.useState("white");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleImageClick = (image) => {
-    setImage(image);
   };
   const handleColorClick = (color) => {
     setColor(color);

@@ -43,7 +43,6 @@ import {
 
 import styles from "assets/jss/nextjs-material-dashboard/views/rtlStyle.js";
 
-import avatar from "assets/img/faces/marc.jpg";
 
 let bugs = [
   "طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن؟",

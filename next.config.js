@@ -8,6 +8,15 @@ const path = require("path");
 module.exports = withPlugins([[withSass], [withImages], [withCSS]], {
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
+
+    // Add a rule to ignore image files
+    config.module.rules.push({
+      test: /\.(png|jpg|jpeg|gif|svg)$/i,
+      use: {
+        loader: 'ignore-loader',
+      },
+    });
+
     return config;
   },
 });
